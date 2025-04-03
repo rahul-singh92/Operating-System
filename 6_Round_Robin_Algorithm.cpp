@@ -69,7 +69,7 @@ int main()
             if(p[idx].remaining_burst_time == 0)
             {
                 p[idx].program_completion_time = current_time;
-                +-p[idx].program_turnaround_time = p[idx].program_completion_time - p[idx].program_arrival_time;
+                p[idx].program_turnaround_time = p[idx].program_completion_time - p[idx].program_arrival_time;
                 p[idx].program_waiting_time = p[idx].program_turnaround_time - p[idx].program_burst_time;
 
                 completed[idx] = true;
